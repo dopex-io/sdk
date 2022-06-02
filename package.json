@@ -1,0 +1,48 @@
+{
+  "name": "@dopex-io/sdk",
+  "version": "1.0.0-beta.1",
+  "license": "UNLICENSED",
+  "description": "Dopex SDK",
+  "homepage": "https://github.com/dopex-io/sdk#readme",
+  "type": "module",
+  "module": "dist/index.js",
+  "main": "dist/index.cjs",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dopex-io/sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dopex-io/sdk/issues"
+  },
+  "scripts": {
+    "predev": "yarn generate-types",
+    "dev": "microbundle watch",
+    "build": "microbundle",
+    "clean": "rimraf dist src/types/typechain",
+    "prepare": "yarn build",
+    "prebuild": "yarn generate-types",
+    "generate-types": "typechain --target ethers-v5 src/abi/*.json --out-dir src/types/typechain"
+  },
+  "dependencies": {
+    "ethers": "^5.6.4"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@typechain/ethers-v5": "^10.0.0",
+    "microbundle": "^0.15.0",
+    "rimraf": "^3.0.2",
+    "typechain": "^8.0.0",
+    "typescript": "^4.6.4"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
