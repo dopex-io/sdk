@@ -221,8 +221,9 @@ const Addresses: { [key: number]: any } = {
       },
     },
     'RATE-VAULTS': {
-      MIM3CRV: '0x602B9f9B7126DEce2b9a589B49Fe5947c903A156',
+      MIM3CRV: '0x3BBCbe743AbeD14072EC26dABc4663Fa850f38D5',
     },
+    CurveGaugesOracle: '0xF45f20bc21C9933ae8613EdD8EF108b7fD25E527'
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
