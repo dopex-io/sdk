@@ -116,6 +116,7 @@ const Addresses: { [key: number]: any } = {
     DiamondPepesNFTPledge2: '0x353e731EaA33fC1cc7f50E74EA390e95b192277F',
     Tzwap1inchRouter: '0xDA615781745fe52Fc3383Ad23cE9184419bEec30',
     Escrow: '0x6D9c288708a77d51Fa66393916511Cde60522baF',
+    CurveGaugesOracle: '0xF45f20bc21C9933ae8613EdD8EF108b7fD25E527',
     NFTS: {
       DopexBridgoorNFT: '0x4Ee9fe9500E7C4Fe849AdD9b14beEc5eC5b7d955',
       DopexHalloweenNFT: '0x9baDE4013a7601aA1f3e9f1361a4ebE60D91B1B5',
@@ -222,8 +223,7 @@ const Addresses: { [key: number]: any } = {
     },
     'RATE-VAULTS': {
       MIM3CRV: '0x3BBCbe743AbeD14072EC26dABc4663Fa850f38D5',
-    },
-    CurveGaugesOracle: '0xF45f20bc21C9933ae8613EdD8EF108b7fD25E527'
+    }
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
