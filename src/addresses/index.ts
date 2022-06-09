@@ -19,6 +19,23 @@ const Addresses: { [key: number]: any } = {
       PriceOracleAggregator: '0x48Bf3f10E0dB5E572ADaA3040Dd2f087619B3e99',
     },
   },
+  1337: {
+    WETH: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
+    USDT: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+    atlantics: {
+      perpetuals: {
+        'ETH-USDT-PUTS-weekly': {
+          vault: '0x1429859428C0aBc9C2C47C8Ee9FBaf82cFA0F20f',
+          collateral: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
+          underlying: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+          optionPricing: '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0',
+          priceOracle: '0x610178dA211FEF7D417bC0e6FeD39F05609AD788',
+          volatilityOracle: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512',
+          strategy: '0xc351628EB244ec633d5f21fBD6621e1a683B1181',
+        },
+      },
+    },
+  },
   1: {
     USDT: '0xdac17f958d2ee523a2206206994597c13d831ec7',
     USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
