@@ -20,15 +20,15 @@ const Addresses: { [key: number]: any } = {
     },
   },
   1337: {
-    WETH: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
-    USDT: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+    WETH: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+    USDT: '0xaca81583840B1bf2dDF6CDe824ada250C1936B4D',
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0x1429859428C0aBc9C2C47C8Ee9FBaf82cFA0F20f',
+          WEEKLY: '0x8B190573374637f144AC8D37375d97fd84cBD3a0',
         },
         CALLS: {
-          WEEKLY: '0xB0D4afd8879eD9F52b28595d31B441D079B2Ca07',
+          WEEKLY: '0x9385556B571ab92bf6dC9a0DbD75429Dd4d56F91',
         },
       },
     },
@@ -96,6 +96,16 @@ const Addresses: { [key: number]: any } = {
       VolatilityOracle: '0x14D4d3049237D2c1E431055216DD3194Bd560684',
       PriceOracleAggregator: '0xc5555388Cd4f341dCC8c039e1EA63092f64b0B6f',
       Delegator: '0xd2dA8e59E715fC24df8D55CC4c855Ec8626422FE',
+    },
+    'ATLANTIC-POOLS': {
+      WETH: {
+        PUTS: {
+          WEEKLY: '0xc229d416e3c8b7F0f5D9666c7C1460245B6935dC',
+        },
+        CALLS: {
+          WEEKLY: '0x91DBc543E202564777301c9630599131b780c051',
+        },
+      },
     },
   },
   42161: {
