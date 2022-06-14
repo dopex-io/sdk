@@ -222,7 +222,9 @@ const Addresses: { [key: number]: any } = {
       },
     },
     'RATE-VAULTS': {
-      MIM3CRV: '0x3BBCbe743AbeD14072EC26dABc4663Fa850f38D5',
+      'MIM3CRV-1': '0x602B9f9B7126DEce2b9a589B49Fe5947c903A156',
+      'MIM3CRV-2': '0x3BBCbe743AbeD14072EC26dABc4663Fa850f38D5',
+      PUSD3CRV: '0xdb2825f2A6c141A86862cCd5D4A86B18a436dd41'
     }
   },
   56: {
