@@ -100,10 +100,10 @@ const Addresses: { [key: number]: any } = {
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0xc229d416e3c8b7F0f5D9666c7C1460245B6935dC',
+          WEEKLY: '0x36Df7DD84c27EC4A65Aaa5e21fBca74348B3c356',
         },
         CALLS: {
-          WEEKLY: '0x91DBc543E202564777301c9630599131b780c051',
+          WEEKLY: '0x081F4797f44C0721CFb89E175408264A4158f262',
         },
       },
     },
