@@ -20,17 +20,23 @@ const Addresses: { [key: number]: any } = {
     },
   },
   1337: {
-    WETH: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
-    USDT: '0xaca81583840B1bf2dDF6CDe824ada250C1936B4D',
+    USDT: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+    WETH: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0x8B190573374637f144AC8D37375d97fd84cBD3a0',
+          WEEKLY: '0x1429859428C0aBc9C2C47C8Ee9FBaf82cFA0F20f',
         },
         CALLS: {
-          WEEKLY: '0x9385556B571ab92bf6dC9a0DbD75429Dd4d56F91',
+          WEEKLY: '0xB0D4afd8879eD9F52b28595d31B441D079B2Ca07',
         },
       },
+    },
+    STRATEGIES: {
+      'INSURED-PERPS': '0xc351628EB244ec633d5f21fBD6621e1a683B1181',
+    },
+    GMX: {
+      VAULT: '0x0165878A594ca255338adfa4d48449f69242Eb8F',
     },
   },
   1: {
