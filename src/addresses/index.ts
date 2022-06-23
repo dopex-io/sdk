@@ -35,7 +35,7 @@ const Addresses: { [key: number]: any } = {
     STRATEGIES: {
       'INSURED-PERPS': '0xc351628EB244ec633d5f21fBD6621e1a683B1181',
     },
-    GMX: {
+    GAMBIT: {
       VAULT: '0x0165878A594ca255338adfa4d48449f69242Eb8F',
     },
   },
@@ -69,7 +69,6 @@ const Addresses: { [key: number]: any } = {
     USDTMock: '0xb26411F7515F94EbdB5152e396Fb0Ab8908423eA',
     Dopex: '0x4227933728ca1f40277CF078096B0fc0D91C2aDC',
     OptionPoolBroker: '0xaD170Fbe91f2CF533daF556C1cf5f610f27BdB79',
-    WETH: '0xd530f42ec6a5Df88A82d51534FC6623E0721d6D3',
     WBTC: '0x1355A9AdD740eaFC3359A08484eFdb7Ad60D34BC',
     DPX: '0x9f2488ee66Fc770b6A98042fC67643bcA246df24',
     DopexRewards: '0x24f88c3c756dE421fe7C34938ee4a14EcBD9CEBC',
@@ -103,15 +102,23 @@ const Addresses: { [key: number]: any } = {
       PriceOracleAggregator: '0xc5555388Cd4f341dCC8c039e1EA63092f64b0B6f',
       Delegator: '0xd2dA8e59E715fC24df8D55CC4c855Ec8626422FE',
     },
+    USDC: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+    WETH: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0x36Df7DD84c27EC4A65Aaa5e21fBca74348B3c356',
+          WEEKLY: '0x1429859428C0aBc9C2C47C8Ee9FBaf82cFA0F20f',
         },
         CALLS: {
-          WEEKLY: '0x081F4797f44C0721CFb89E175408264A4158f262',
+          WEEKLY: '0xB0D4afd8879eD9F52b28595d31B441D079B2Ca07',
         },
       },
+    },
+    STRATEGIES: {
+      'INSURED-PERPS': '0xc351628EB244ec633d5f21fBD6621e1a683B1181',
+    },
+    GAMBIT: {
+      VAULT: '0x0165878A594ca255338adfa4d48449f69242Eb8F',
     },
   },
   42161: {
