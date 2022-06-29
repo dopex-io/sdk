@@ -226,6 +226,7 @@ const Addresses: { [key: number]: any } = {
       'MIM3CRV-2': '0x3BBCbe743AbeD14072EC26dABc4663Fa850f38D5',
       PUSD3CRV: '0xdb2825f2A6c141A86862cCd5D4A86B18a436dd41',
     },
+    DPXBonds: "0x83EccfFc332c3bbEdc2F2473fFF8dc408FD36C16",
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
