@@ -1,3 +1,5 @@
+import { BigNumber } from "ethers";
+
 const Addresses: { [key: number]: any } = {
   42: {
     WETH: '0x6701aa44353a8895b60b1289FeA326db66aCad9c',
@@ -110,7 +112,7 @@ const Addresses: { [key: number]: any } = {
           WEEKLY: '0x1709d446010EaABd5a0B82C1863a8C5a97d90546',
         },
         CALLS: {
-          WEEKLY: '0x37073E459Eeb7f528C33B373311966f9c4d4d55b',
+          WEEKLY: '0x7345058e13305f1Ddec2ae5260C2480130F95F58',
         },
       },
     },
