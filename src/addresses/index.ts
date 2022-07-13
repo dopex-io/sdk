@@ -84,7 +84,7 @@ const Addresses: { [key: number]: any } = {
       Delegator: '0xd2dA8e59E715fC24df8D55CC4c855Ec8626422FE',
     },
     'SSOV-V3': {
-      VIEWER: '0x150a595458295C6F1Ed0B43e6c24a8C6edA4F3f0',
+      VIEWER: '0xDEe70dF134c7608B792d34cC1d93b00f320C3d1B',
       VAULTS: {
         'ETH-WEEKLY-CALLS-SSOV-V3-TEST':
           '0x29d1fdaDC3c24bdAB2f5944c762102b0Ae08a93c',
