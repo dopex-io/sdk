@@ -1,4 +1,3 @@
-import { BigNumber } from "ethers";
 
 const Addresses: { [key: number]: any } = {
   42: {
@@ -104,25 +103,30 @@ const Addresses: { [key: number]: any } = {
       PriceOracleAggregator: '0xc5555388Cd4f341dCC8c039e1EA63092f64b0B6f',
       Delegator: '0xd2dA8e59E715fC24df8D55CC4c855Ec8626422FE',
     },
-    USDC: '0x4f9cA50AD8A96EE3d25C533F852078169d676473',
-    WETH: '0xf53506c788Cf127cB17cd72d0a31Ee99ac208068',
+    SUSHI: {
+      PAIRS: {
+        'USDC-WETH': '0xFdca3823ae7D46be5b6B7FC7b384E6A4334d8A65',
+      },
+    },
+    USDC: '0xc27eaa9224243bEF6d9621d59E2F2983C6657d89',
+    WETH: '0xe7df339db4DA55Fe15529E6ceb61aCd3bc16B542',
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0x1709d446010EaABd5a0B82C1863a8C5a97d90546',
+          WEEKLY: '0x48ECa2A9deee78ef347758c2992A8DD4cbe55428',
         },
         CALLS: {
-          WEEKLY: '0x7345058e13305f1Ddec2ae5260C2480130F95F58',
+          WEEKLY: '0xb1A73cCf64B08Ea1454FceD438Be32F894e3E9D8',
         },
       },
     },
     STRATEGIES: {
-      'INSURED-PERPS': '0x63898AF94d33c8F6324086Ff29BA54119C3e9351',
+      'INSURED-PERPS': '0x6E6B2f88Ccf93E705cD1E23A8bAe7F59ad8A30E4',
     },
     GAMBIT: {
-      VAULT: '0xcc73B616b78191B331491fA84bbeC9B02715cb5b',
+      VAULT: '0x37d4B4089c35436e57d96f48aaB4ab19e069C9d7',
     },
-    KEEPER: '0x34aEd23ea4cd9629f4899076256F46EF06401493',
+    KEEPER: '0xB4b2E6490AEa7D8FD7AB5875afd9E5fF078C1b9f',
   },
   42161: {
     USDC: '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
