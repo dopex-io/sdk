@@ -130,7 +130,7 @@ const Addresses: { [key: number]: any } = {
       DiamondPepesNFT: '0xede855ceD3e5A59Aaa267aBdDdB0dB21CCFE5072',
     },
     'SSOV-V3': {
-      VIEWER: '0x8Ef275e05aB3c650927C5d4A5D6B7823233812be',
+      VIEWER: '0x0A93FF362287f0AEFfC313423c80854F4713022A',
       VAULTS: {
         'ETH-WEEKLY-CALLS-SSOV-V3':
           '0x376bEcbc031dd53Ffc62192043dE43bf491988FD',
