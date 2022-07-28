@@ -115,7 +115,7 @@ const Addresses: { [key: number]: any } = {
       },
     },
     STRATEGIES: {
-      'INSURED-PERPS': '0x2123eBa6e757782CA4590d121D57a275867Ddc9E',
+      'INSURED-PERPS': '0x0f49b8A9BBca635477FF1D92439d28d2a057d5e6',
     },
     GMX: {
       VAULT: '0x1227bd8e6FEdc79aC327570d606adD27Bae623B6',
