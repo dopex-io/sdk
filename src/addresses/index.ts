@@ -19,6 +19,26 @@ const Addresses: { [key: number]: any } = {
       PriceOracleAggregator: '0x48Bf3f10E0dB5E572ADaA3040Dd2f087619B3e99',
     },
   },
+  1337: {
+    USDT: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
+    WETH: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
+    'ATLANTIC-POOLS': {
+      WETH: {
+        PUTS: {
+          WEEKLY: '0x1429859428C0aBc9C2C47C8Ee9FBaf82cFA0F20f',
+        },
+        CALLS: {
+          WEEKLY: '0xB0D4afd8879eD9F52b28595d31B441D079B2Ca07',
+        },
+      },
+    },
+    STRATEGIES: {
+      'INSURED-PERPS': '0xc351628EB244ec633d5f21fBD6621e1a683B1181',
+    },
+    GAMBIT: {
+      VAULT: '0x0165878A594ca255338adfa4d48449f69242Eb8F',
+    },
+  },
   1: {
     USDT: '0xdac17f958d2ee523a2206206994597c13d831ec7',
     USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
@@ -49,7 +69,6 @@ const Addresses: { [key: number]: any } = {
     USDTMock: '0xb26411F7515F94EbdB5152e396Fb0Ab8908423eA',
     Dopex: '0x4227933728ca1f40277CF078096B0fc0D91C2aDC',
     OptionPoolBroker: '0xaD170Fbe91f2CF533daF556C1cf5f610f27BdB79',
-    WETH: '0xd530f42ec6a5Df88A82d51534FC6623E0721d6D3',
     WBTC: '0x1355A9AdD740eaFC3359A08484eFdb7Ad60D34BC',
     DPX: '0x9f2488ee66Fc770b6A98042fC67643bcA246df24',
     DopexRewards: '0x24f88c3c756dE421fe7C34938ee4a14EcBD9CEBC',
@@ -83,6 +102,23 @@ const Addresses: { [key: number]: any } = {
       PriceOracleAggregator: '0xc5555388Cd4f341dCC8c039e1EA63092f64b0B6f',
       Delegator: '0xd2dA8e59E715fC24df8D55CC4c855Ec8626422FE',
     },
+    USDC: '0xCa12355698Af81020dC71EFDE2B34bAF4e220B69',
+    WETH: '0xe565ded7C1D055f55DDee7eb6629080BaAbb59B0',
+    'ATLANTIC-POOLS': {
+      WETH: {
+        PUTS: {
+          WEEKLY: '0x593d164786BE57Cc353b925e42E59F7a6448C343',
+        },
+        CALLS: {
+          WEEKLY: '0x084C7d57D4d853a8CF76DbdA1Adb7Eb90B0AAA9c',
+        },
+      },
+    },
+    STRATEGIES: {
+      'INSURED-PERPS': '0x0f49b8A9BBca635477FF1D92439d28d2a057d5e6',
+    },
+    'GMX-VAULT': '0x1227bd8e6FEdc79aC327570d606adD27Bae623B6',
+    KEEPER: '0xaF08EdfCA98386650b622e78058a5a6812009E2E',
     'SSOV-V3': {
       VIEWER: '0xDEe70dF134c7608B792d34cC1d93b00f320C3d1B',
       VAULTS: {
