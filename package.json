@@ -31,12 +31,12 @@
     "prebuild": "yarn generate-types",
     "generate-types": "typechain --target ethers-v5 src/abi/*.json --out-dir src/types/typechain"
   },
-  "dependencies": {
-    "ethers": "^5.6.4"
+  "peerDependencies": {
+    "ethers": "^5.6.0"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "@typechain/ethers-v5": "^10.0.0",
+    "ethers": "^5.6.0",
     "microbundle": "^0.15.0",
     "rimraf": "^3.0.2",
     "typechain": "^8.0.0",
