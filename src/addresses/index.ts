@@ -261,6 +261,13 @@ const Addresses: { [key: number]: any } = {
       'PUSD3CRV-BIWEEKLY-1': '0x66cF9033E119FcA8429bC87D423a14AaCEd22a3D',
     },
     DPXBonds: '0x83EccfFc332c3bbEdc2F2473fFF8dc408FD36C16',
+    STRADDLES: {
+      ETH: {
+        Vault: '0xD533eF961aF47384de1aec58A2256d90134b2fEe',
+        StraddlesPositionsMinter: '0x0f4a22977DF09f2A52BEC2D4f5722251d73664B5',
+        WritePositionsMinter: '0xe0FB2A10c5fF1032AA8F41d3E2A195eBc451b43C'
+      }
+    }
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
