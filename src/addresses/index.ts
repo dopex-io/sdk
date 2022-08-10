@@ -263,11 +263,11 @@ const Addresses: { [key: number]: any } = {
     DPXBonds: '0x83EccfFc332c3bbEdc2F2473fFF8dc408FD36C16',
     STRADDLES: {
       ETH: {
-        Vault: '0xD533eF961aF47384de1aec58A2256d90134b2fEe',
-        StraddlesPositionsMinter: '0x0f4a22977DF09f2A52BEC2D4f5722251d73664B5',
-        WritePositionsMinter: '0xe0FB2A10c5fF1032AA8F41d3E2A195eBc451b43C'
-      }
-    }
+        Vault: '0x99ab5B35844691e64780c8358aa34b78e52A18E3',
+        StraddlesPositionsMinter: '0x39AB75B3D75690200c66908E58201A2ddd7c4dF6',
+        WritePositionsMinter: '0x0416195d103b70bb91cE627f1E339725f1a10251',
+      },
+    },
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
