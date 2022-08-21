@@ -168,8 +168,9 @@ const Addresses: { [key: number]: any } = {
       DiamondPepesNFT: '0xede855ceD3e5A59Aaa267aBdDdB0dB21CCFE5072',
     },
     'SSOV-V3': {
-      VIEWER: '0x0A93FF362287f0AEFfC313423c80854F4713022A',
+      VIEWER: '0x9F948e9A79186f076EA19f5DDCCDF30eDc6DbaA2',
       VAULTS: {
+        'ETH-CALLS-SSOV-V3': '0x9E722E233646E1eDEa4A913489A75262A181C911',
         'ETH-WEEKLY-CALLS-SSOV-V3':
           '0x376bEcbc031dd53Ffc62192043dE43bf491988FD',
         'ETH-WEEKLY-CALLS-SSOV-V3-2':
@@ -298,6 +299,11 @@ const Addresses: { [key: number]: any } = {
       'PUSD3CRV-BIWEEKLY-1': '0x66cF9033E119FcA8429bC87D423a14AaCEd22a3D',
     },
     DPXBonds: '0x83EccfFc332c3bbEdc2F2473fFF8dc408FD36C16',
+    STRADDLES: {
+      ETH: {
+        Vault: '0xcd7F2B608196A9Ea8809BFb45069B19C7FFA8e52',
+      },
+    },
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',

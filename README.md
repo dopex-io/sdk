@@ -18,6 +18,20 @@ Via yarn:
 yarn add @dopex-io/sdk
 ```
 
+Note: You need ethers to use the sdk. Install it the following way:
+
+Via npm:
+
+```bash
+npm i ethers
+```
+
+Via yarn:
+
+```bash
+yarn add ethers
+```
+
 ## Development
 
 Please have these installed on your machine:
