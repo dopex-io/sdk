@@ -265,6 +265,9 @@ const Addresses: { [key: number]: any } = {
       ETH: {
         Vault: '0xcd7F2B608196A9Ea8809BFb45069B19C7FFA8e52',
       },
+      RDPX: {
+        Vault: '0x59C648BAF982C0C34AEB893eFE60cb7d5F5aB425',
+      },
     },
   },
   56: {
