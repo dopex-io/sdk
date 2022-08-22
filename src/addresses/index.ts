@@ -263,7 +263,7 @@ const Addresses: { [key: number]: any } = {
     DPXBonds: '0x83EccfFc332c3bbEdc2F2473fFF8dc408FD36C16',
     STRADDLES: {
       ETH: {
-        Vault: '0xcd7F2B608196A9Ea8809BFb45069B19C7FFA8e52',
+        Vault: '0x0bE0905daFa89Dac8F26e9F96e04cfe3c5fA3E51',
       },
       RDPX: {
         Vault: '0x59C648BAF982C0C34AEB893eFE60cb7d5F5aB425',
