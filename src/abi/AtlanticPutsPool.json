@@ -57,17 +57,7 @@
           },
           {
             "internalType": "uint256",
-            "name": "tickSize",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
             "name": "baseFundingRate",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "unwindFee",
             "type": "uint256"
           },
           {
@@ -180,6 +170,19 @@
     "inputs": [
       {
         "indexed": false,
+        "internalType": "uint256",
+        "name": "_newCheckpointInterval",
+        "type": "uint256"
+      }
+    ],
+    "name": "CheckpointIntervalSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
         "internalType": "address",
         "name": "sender",
         "type": "address"
@@ -218,6 +221,56 @@
       }
     ],
     "name": "ExpireDelayToleranceUpdate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_managedContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_setAs",
+        "type": "bool"
+      }
+    ],
+    "name": "ManagedContractSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxStrike",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "startTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewCheckpoint",
     "type": "event"
   },
   {
@@ -330,6 +383,49 @@
       {
         "indexed": false,
         "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pnl",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewSettle",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "checkpoint",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
         "name": "withdrawableAmount",
         "type": "uint256"
       },
@@ -366,6 +462,37 @@
       }
     ],
     "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalCollateral",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "RelockCollateral",
     "type": "event"
   },
   {
@@ -461,6 +588,31 @@
     "inputs": [
       {
         "indexed": false,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalCollateral",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "UnlockCollateral",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
         "internalType": "address",
         "name": "account",
         "type": "address"
@@ -470,13 +622,74 @@
     "type": "event"
   },
   {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "Unwind",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "collateralUtilizationWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseFundingRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expireDelayTolerance",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct VaultConfiguration",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "VaultConfigurationSet",
+    "type": "event"
+  },
+  {
     "inputs": [],
-    "name": "DEFAULT_ADMIN_ROLE",
+    "name": "COLLATERAL_TOKEN_DECIMALS",
     "outputs": [
       {
-        "internalType": "bytes32",
+        "internalType": "uint256",
         "name": "",
-        "type": "bytes32"
+        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -484,7 +697,7 @@
   },
   {
     "inputs": [],
-    "name": "MANAGED_CONTRACT",
+    "name": "DEFAULT_ADMIN_ROLE",
     "outputs": [
       {
         "internalType": "bytes32",
@@ -509,16 +722,42 @@
     "type": "function"
   },
   {
-    "inputs": [
+    "inputs": [],
+    "name": "OPTION_TOKEN_DECIMALS",
+    "outputs": [
       {
-        "internalType": "address",
-        "name": "_managedContract",
-        "type": "address"
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
       }
     ],
-    "name": "addManagedContract",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STRIKE_DECIMALS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WEIGHTS_MUL_DIV",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -588,10 +827,21 @@
         "internalType": "uint256",
         "name": "expiry",
         "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tickSize",
+        "type": "uint256"
       }
     ],
     "name": "bootstrap",
-    "outputs": [],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -613,6 +863,35 @@
       {
         "internalType": "uint256",
         "name": "funding",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculatePnl",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
         "type": "uint256"
       }
     ],
@@ -745,47 +1024,6 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_maxStrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_unlockedCollateral",
-        "type": "uint256"
-      }
-    ],
-    "name": "decreaseEpochMaxStrikeUnlockedCollateral",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_index",
-        "type": "uint256"
-      }
-    ],
-    "name": "deleteEpochDeposit",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
         "name": "_maxStrike",
         "type": "uint256"
       },
@@ -801,8 +1039,27 @@
       }
     ],
     "name": "deposit",
-    "outputs": [],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "depositId",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "depositIdCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -866,32 +1123,12 @@
         "type": "uint256"
       }
     ],
-    "name": "epochDeposits",
+    "name": "epochMaxStrikeCheckpointStartIndex",
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "strike",
+        "name": "",
         "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "timestamp",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "liquidity",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "checkpoint",
-        "type": "uint256"
-      },
-      {
-        "internalType": "address",
-        "name": "depositor",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -901,68 +1138,128 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_epoch",
+        "name": "",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_maxStrike",
+        "name": "",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_checkpoint",
+        "name": "",
         "type": "uint256"
       }
     ],
     "name": "epochMaxStrikeCheckpoints",
     "outputs": [
       {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "startTime",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "totalLiquidity",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "totalLiquidityBalance",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "activeCollateral",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "unlockedCollateral",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "premiumAccrued",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "fundingAccrued",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "underlyingAccrued",
-            "type": "uint256"
-          }
-        ],
-        "internalType": "struct EpochMaxStrikeCheckpoint",
-        "name": "checkpoint",
-        "type": "tuple"
+        "internalType": "uint256",
+        "name": "startTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalLiquidity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalLiquidityBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "activeCollateral",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "unlockedCollateral",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "premiumAccrued",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fundingAccrued",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "underlyingAccrued",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "epochMaxStrikeCheckpointsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "epochMaxStrikesRange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "epochTickSize",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -1031,14 +1328,19 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "epoch",
+        "name": "_tokenId",
         "type": "uint256"
       }
     ],
-    "name": "getEpochDeposits",
+    "name": "getDepositPosition",
     "outputs": [
       {
         "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
           {
             "internalType": "uint256",
             "name": "strike",
@@ -1065,66 +1367,9 @@
             "type": "address"
           }
         ],
-        "internalType": "struct Deposit[]",
-        "name": "result",
-        "type": "tuple[]"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      }
-    ],
-    "name": "getEpochExpiryTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "_expiryTime",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      }
-    ],
-    "name": "getEpochHighestMaxStrike",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "_highestMaxStrike",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      }
-    ],
-    "name": "getEpochLowestMaxStrike",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lowestMaxStrike",
-        "type": "uint256"
+        "internalType": "struct DepositPosition",
+        "name": "",
+        "type": "tuple"
       }
     ],
     "stateMutability": "view",
@@ -1143,7 +1388,7 @@
         "type": "uint256"
       }
     ],
-    "name": "getEpochMaxStrikeCheckpoints",
+    "name": "getEpochCheckpoints",
     "outputs": [
       {
         "components": [
@@ -1188,47 +1433,9 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct EpochMaxStrikeCheckpoint[]",
-        "name": "",
+        "internalType": "struct Checkpoint[]",
+        "name": "_checkpoints",
         "type": "tuple[]"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      }
-    ],
-    "name": "getEpochMaxStrikes",
-    "outputs": [
-      {
-        "internalType": "uint256[]",
-        "name": "_maxStrikes",
-        "type": "uint256[]"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      }
-    ],
-    "name": "getEpochSettlementPrice",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "_settlementPrice",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -1240,23 +1447,13 @@
         "internalType": "uint256",
         "name": "epoch",
         "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "maxStrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "address",
-        "name": "user",
-        "type": "address"
       }
     ],
-    "name": "getEpochUserDepositKeys",
+    "name": "getEpochStrikes",
     "outputs": [
       {
         "internalType": "uint256[]",
-        "name": "result",
+        "name": "maxStrikes",
         "type": "uint256[]"
       }
     ],
@@ -1286,20 +1483,81 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_maxStrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
+        "name": "_tokenId",
         "type": "uint256"
       }
     ],
-    "name": "getMaxStrikeValue",
+    "name": "getOptionsPurchase",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionStrike",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionsAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryDelta",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "strikes",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "checkpoints",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "weights",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct OptionsPurchase",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_purchaseId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRefundOnRelock",
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "_value",
+        "name": "refund",
         "type": "uint256"
       }
     ],
@@ -1320,38 +1578,6 @@
         "internalType": "bytes32",
         "name": "",
         "type": "bytes32"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "getTickSize",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "epoch",
-        "type": "uint256"
-      }
-    ],
-    "name": "getTimeLeftTillExpiry",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "result",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -1453,52 +1679,6 @@
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_maxstrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_activeCollateral",
-        "type": "uint256"
-      }
-    ],
-    "name": "increaseEpochMaxStrikeActiveCollateral",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_maxStrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_unlockedCollateral",
-        "type": "uint256"
-      }
-    ],
-    "name": "increaseEpochMaxStrikeUnlockedCollateral",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "address",
         "name": "addr",
         "type": "address"
@@ -1535,89 +1715,6 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_maxStrikesCollateralIndex",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      },
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      }
-    ],
-    "name": "onRelockCollateral",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "fundingCharged",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "prevFundingCharged",
-        "type": "uint256"
-      },
-      {
-        "components": [
-          {
-            "internalType": "address",
-            "name": "user",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "optionStrike",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "optionsAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "index",
-            "type": "uint256"
-          },
-          {
-            "components": [
-              {
-                "internalType": "uint256",
-                "name": "fundingRate",
-                "type": "uint256"
-              },
-              {
-                "internalType": "uint256",
-                "name": "expiryDelta",
-                "type": "uint256"
-              },
-              {
-                "internalType": "uint256",
-                "name": "collateralAccess",
-                "type": "uint256"
-              }
-            ],
-            "internalType": "struct CollateralUnlock",
-            "name": "collateralUnlock",
-            "type": "tuple"
-          }
-        ],
-        "internalType": "struct MaxStrikesCollateral",
-        "name": "",
-        "type": "tuple"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [],
     "name": "pause",
     "outputs": [],
@@ -1632,19 +1729,6 @@
         "internalType": "bool",
         "name": "",
         "type": "bool"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "poolUtils",
-    "outputs": [
-      {
-        "internalType": "contract IAtlanticPutsPoolUtils",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -1672,7 +1756,7 @@
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "",
+        "name": "purchaseId",
         "type": "uint256"
       }
     ],
@@ -1680,10 +1764,23 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "purchaseIdCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "maxStrikesCollateralIndex",
+        "name": "purchaseId",
         "type": "uint256"
       }
     ],
@@ -1825,11 +1922,16 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_poolUtils",
+        "name": "_managedContract",
         "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_setAs",
+        "type": "bool"
       }
     ],
-    "name": "setPoolUtils",
+    "name": "setManagedContract",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -1845,17 +1947,7 @@
           },
           {
             "internalType": "uint256",
-            "name": "tickSize",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
             "name": "baseFundingRate",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "unwindFee",
             "type": "uint256"
           },
           {
@@ -1878,7 +1970,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "maxStrikesCollateralIndex",
+        "name": "purchaseId",
         "type": "uint256"
       },
       {
@@ -1891,7 +1983,7 @@
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "pnl",
+        "name": "pnlToUser",
         "type": "uint256"
       }
     ],
@@ -2050,7 +2142,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "maxStrikesCollateralIndex",
+        "name": "purchaseId",
         "type": "uint256"
       },
       {
@@ -2081,7 +2173,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "maxStrikesCollateralIndex",
+        "name": "purchaseId",
         "type": "uint256"
       }
     ],
@@ -2094,6 +2186,19 @@
       }
     ],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unwindFeePercentage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -2110,29 +2215,6 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_epoch",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_highestStrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_lowestStrike",
-        "type": "uint256"
-      }
-    ],
-    "name": "updateMaxStrikesRange",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
     "inputs": [],
     "name": "vaultConfiguration",
     "outputs": [
@@ -2143,17 +2225,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "tickSize",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
         "name": "baseFundingRate",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "unwindFee",
         "type": "uint256"
       },
       {
@@ -2188,12 +2260,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "maxStrike",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "epoch",
+        "name": "depositId",
         "type": "uint256"
       }
     ],

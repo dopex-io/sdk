@@ -1,0 +1,321 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_strike",
+        "type": "uint256"
+      }
+    ],
+    "name": "getEpochCheckpoints",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "startTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalLiquidity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalLiquidityBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeCollateral",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockedCollateral",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "premiumAccrued",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingAccrued",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingAccrued",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Checkpoint[]",
+        "name": "_checkpoints",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "getEpochStrikes",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "getEpochVaultState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "settlementPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isVaultReady",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isVaultExpired",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct VaultState",
+        "name": "_state",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserDeposits",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strike",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "checkpoint",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "depositor",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct DepositPosition[]",
+        "name": "_depositPositions",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserOptionsPurchases",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionStrike",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionsAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryDelta",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "strikes",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "checkpoints",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "weights",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct OptionsPurchase[]",
+        "name": "_purchasePositions",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultConfiguration",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "collateralUtilizationWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseFundingRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expireDelayTolerance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VaultConfiguration",
+        "name": "configuration",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
