@@ -268,6 +268,9 @@ const Addresses: { [key: number]: any } = {
       RDPX: {
         Vault: '0xCBCE47f554fBd4F8985800795322eF6901923e5c',
       },
+      DPX: {
+        Vault: '0x89801C1855D680a86aAF7Eb887Ff10d451683A8D',
+      },
     },
   },
   56: {
