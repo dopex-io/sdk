@@ -262,15 +262,12 @@ const Addresses: { [key: number]: any } = {
     },
     DPXBonds: '0x83EccfFc332c3bbEdc2F2473fFF8dc408FD36C16',
     STRADDLES: {
-      ETH: {
-        Vault: '0xE3E5ae751B35b985395d2d89C6475c75EeF67F19',
-      },
-      RDPX: {
-        Vault: '0xCBCE47f554fBd4F8985800795322eF6901923e5c',
-      },
-      DPX: {
-        Vault: '0x89801C1855D680a86aAF7Eb887Ff10d451683A8D',
-      },
+      OPTION_PRICING: '0x2b99e3D67dAD973c1B9747Da742B7E26c8Bdd67B',
+      VAULT: {
+        ETH: '0xE3E5ae751B35b985395d2d89C6475c75EeF67F19',
+        RDPX: '0xCBCE47f554fBd4F8985800795322eF6901923e5c',
+        DPX: '0x89801C1855D680a86aAF7Eb887Ff10d451683A8D',
+      }
     },
   },
   56: {
