@@ -336,6 +336,20 @@ const Addresses: { [key: number]: any } = {
         DPX: '0x89801C1855D680a86aAF7Eb887Ff10d451683A8D',
       },
     },
+    'ATLANTIC-POOLS': {
+      WETH: {
+        PUTS: {
+          WEEKLY: '0xB18555B46A5CAc6cb1E9b2513e82A29DC3fcdb92',
+        },
+      },
+    },
+    'ATLANTICS-VIEWER': '0x6e77Fbf269b1BC6a2F5342f61387413dd9b1E159',
+    STRATEGIES: {
+      'INSURED-PERPS': {
+        STRATEGY: '0x88fb9756d565e044b4fdc62096a8f61551f4fa6d',
+        VIEWER: '0x25F2871aB0F56b2e70fB8Bc3f1Dfd2ba146eD903',
+      },
+    },
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
