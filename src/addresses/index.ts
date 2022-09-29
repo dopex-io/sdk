@@ -339,14 +339,14 @@ const Addresses: { [key: number]: any } = {
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0xB18555B46A5CAc6cb1E9b2513e82A29DC3fcdb92',
+          WEEKLY: '0x6a1fe06eb17c018bdfa673bd32570de17975b145',
         },
       },
     },
     'ATLANTICS-VIEWER': '0x6e77Fbf269b1BC6a2F5342f61387413dd9b1E159',
     STRATEGIES: {
       'INSURED-PERPS': {
-        STRATEGY: '0x88fb9756d565e044b4fdc62096a8f61551f4fa6d',
+        STRATEGY: '0xDF61D7374aa1BB31d289321e7d354f5d135fDBb4',
         VIEWER: '0x25F2871aB0F56b2e70fB8Bc3f1Dfd2ba146eD903',
       },
     },
