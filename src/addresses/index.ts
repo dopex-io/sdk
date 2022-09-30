@@ -208,6 +208,8 @@ const Addresses: { [key: number]: any } = {
           '0x546cd36F761f1D984eEE1Dbe67cC4F86E75cAF0C',
         'ETH-WEEKLY-CALLS-SSOV-V3-5':
           '0x9Cc9BeffE64868CB4B97890A19219449890E6eA0',
+        'ETH-MONTHLY-CALLS-SSOV-V3-3':
+          '0xC59836FEC63Cfb2E48b0aa00515056436D74Dc03',
       },
     },
     SSOV: {
