@@ -348,7 +348,7 @@ const Addresses: { [key: number]: any } = {
     'GMX-READER': '0x22199a49A999c351eF7927602CFB187ec3cae489',
     STRATEGIES: {
       'INSURED-PERPS': {
-        STRATEGY: '0xbd06Ab42774594D9bBe31ee915C2887AC79BfacC',
+        STRATEGY: '0x27442e0c3e6809e7CC8Fc39312dE2d1B95c97b53',
         VIEWER: '0x25F2871aB0F56b2e70fB8Bc3f1Dfd2ba146eD903',
       },
     },
