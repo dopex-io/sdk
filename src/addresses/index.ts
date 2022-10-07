@@ -338,6 +338,7 @@ const Addresses: { [key: number]: any } = {
       WETH: {
         PUTS: {
           WEEKLY: '0x5f8a669b85ce64DBAc730Dd35C8B70d80C31bC9E',
+          DAILY: '0x4ea8f4e6581231EeED95435d3f731Fb381E937dA'
         },
       },
     },
