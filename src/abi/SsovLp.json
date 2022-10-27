@@ -489,6 +489,11 @@
         "type": "uint256"
       },
       {
+        "internalType": "uint256",
+        "name": "maxTokensToFill",
+        "type": "uint256"
+      },
+      {
         "internalType": "address",
         "name": "to",
         "type": "address"
@@ -689,6 +694,11 @@
           {
             "internalType": "uint256",
             "name": "purchased",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTokensToFill",
             "type": "uint256"
           },
           {
@@ -1094,6 +1104,11 @@
             "type": "uint256"
           },
           {
+            "internalType": "uint256",
+            "name": "maxTokensToFill",
+            "type": "uint256"
+          },
+          {
             "internalType": "address",
             "name": "buyer",
             "type": "address"
@@ -1209,6 +1224,11 @@
       {
         "internalType": "uint256[]",
         "name": "discount",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "maxTokensToFill",
         "type": "uint256[]"
       },
       {
