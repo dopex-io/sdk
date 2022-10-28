@@ -336,7 +336,7 @@ const Addresses: { [key: number]: any } = {
     'ATLANTIC-POOLS': {
       WETH: {
         PUTS: {
-          WEEKLY: '0x7fa8E5202F0Ef89835931bc48C2214A97777a02A',
+          WEEKLY: '0x2E1B71d140133A2B2986a440B55154b1411f1d8C',
         },
       },
     },
@@ -345,8 +345,8 @@ const Addresses: { [key: number]: any } = {
     'GMX-READER': '0x22199a49A999c351eF7927602CFB187ec3cae489',
     STRATEGIES: {
       'INSURED-PERPS': {
-        STRATEGY: '0xb82D04EDc0BB383AE7C51d3458ce84Ce577Eb491',
-        UTILS: '0x66717bFfC371e43Ea3F9586161867765f1C7dD93',
+        STRATEGY: '0x61382c26A1AE9De8593514d9317bC6AaEfe4309d',
+        UTILS: '0xC53f287117bd44Cc57B755Cfc69e91aF39907052',
       },
     },
   },
