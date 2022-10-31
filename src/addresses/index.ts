@@ -119,7 +119,8 @@ const Addresses: { [key: number]: any } = {
     '1inchRouter': '0x1111111254fb6c44bAC0beD2854e76F90643097d',
     DuelDiamondPepesNFTsMint: '0x11DF7310313c29a51C48ab0b41F2Cb5775F4B6DB',
     DuelDiamondPepesNFTsDuel: '0x360E68Dc597B75eBCF68b3b859513E8dF3412E55',
-    DuelDiamondPepesNFTsLeaderboard: '0x4E31359828F279fa6d748971eE087a6f168c21a2',
+    DuelDiamondPepesNFTsLeaderboard:
+      '0x4E31359828F279fa6d748971eE087a6f168c21a2',
     Tzwap1inchRouter: '0xDA615781745fe52Fc3383Ad23cE9184419bEec30',
     Escrow: '0x6D9c288708a77d51Fa66393916511Cde60522baF',
     CurveGaugesOracle: '0xF45f20bc21C9933ae8613EdD8EF108b7fD25E527',
@@ -127,7 +128,7 @@ const Addresses: { [key: number]: any } = {
       DopexBridgoorNFT: '0x4Ee9fe9500E7C4Fe849AdD9b14beEc5eC5b7d955',
       DopexHalloweenNFT: '0x9baDE4013a7601aA1f3e9f1361a4ebE60D91B1B5',
       DiamondPepesNFT: '0xede855ceD3e5A59Aaa267aBdDdB0dB21CCFE5072',
-      DuelDiamondPepesNFT: '0x675CA5708c8dB099F3Db9Cdff06995c7653278FC'
+      DuelDiamondPepesNFT: '0x675CA5708c8dB099F3Db9Cdff06995c7653278FC',
     },
     'SSOV-V3': {
       VIEWER: '0x9abE93F7A70998f1836C2Ee0E21988Ca87072001',
@@ -210,6 +211,8 @@ const Addresses: { [key: number]: any } = {
           '0x9Cc9BeffE64868CB4B97890A19219449890E6eA0',
         'ETH-MONTHLY-CALLS-SSOV-V3-3':
           '0xC59836FEC63Cfb2E48b0aa00515056436D74Dc03',
+        'ETH-QUARTERLY-PUTS-SSOV-V3':
+          '0x8a0dd3203a9F1cf66c7201e4A8Ab4762D09f0B3a',
       },
     },
     SSOV: {
