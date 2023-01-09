@@ -134,6 +134,7 @@ const Addresses: { [key: number]: any } = {
     },
     'SSOV-V3': {
       VIEWER: '0x9abE93F7A70998f1836C2Ee0E21988Ca87072001',
+      ROUTER: '0xb11Fe3b5AAd4BF872d9C4F876Fc74CbD97bf04C0',
       VAULTS: {
         'ETH-CALLS-SSOV-V3': '0x9E722E233646E1eDEa4A913489A75262A181C911',
         'ETH-WEEKLY-CALLS-SSOV-V3':
@@ -215,6 +216,8 @@ const Addresses: { [key: number]: any } = {
           '0xC59836FEC63Cfb2E48b0aa00515056436D74Dc03',
         'ETH-QUARTERLY-PUTS-SSOV-V3':
           '0x8a0dd3203a9F1cf66c7201e4A8Ab4762D09f0B3a',
+        'stETH-WEEKLY-CALLS-SSOV-V3':
+          '0xFca61E79F38a7a82c62f469f55A9df54CB8dF678',
       },
     },
     SSOV: {
