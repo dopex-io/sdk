@@ -309,8 +309,7 @@ const Addresses: { [key: number]: any } = {
     },
     OLP: {
       SsovLp: {
-        'DPX-MONTHLY-CALLS-SSOV-V3-3':
-          '0xd843E6212efdAB10492B6F55DC89aD621ea716Aa',
+        'DPX-MONTHLY': '0x3D0354322D4Ef15CBF4498581976F0dd40DedD07',
       },
     },
   },
