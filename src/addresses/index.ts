@@ -307,6 +307,12 @@ const Addresses: { [key: number]: any } = {
         DPX: '0x0Dc96f38980144ebFfe745706DFeE92622dba829',
       },
     },
+    OLP: {
+      SsovLp: {
+        'DPX-MONTHLY-CALLS-SSOV-V3-3':
+          '0xd843E6212efdAB10492B6F55DC89aD621ea716Aa',
+      },
+    },
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
