@@ -168,11 +168,13 @@ const Addresses: { [key: number]: any } = {
     NFTS: {
       DopexBridgoorNFT: '0x4Ee9fe9500E7C4Fe849AdD9b14beEc5eC5b7d955',
       DopexHalloweenNFT: '0x9baDE4013a7601aA1f3e9f1361a4ebE60D91B1B5',
+      DopexSantasNFT: '0xE5953Cd5C1046c5428aba3A1e8797218e5156E5d',
       DiamondPepesNFT: '0xede855ceD3e5A59Aaa267aBdDdB0dB21CCFE5072',
       DuelDiamondPepesNFT: '0x675CA5708c8dB099F3Db9Cdff06995c7653278FC',
     },
     'SSOV-V3': {
       VIEWER: '0x9abE93F7A70998f1836C2Ee0E21988Ca87072001',
+      ROUTER: '0xb11Fe3b5AAd4BF872d9C4F876Fc74CbD97bf04C0',
       VAULTS: {
         'ETH-CALLS-SSOV-V3': '0x9E722E233646E1eDEa4A913489A75262A181C911',
         'ETH-WEEKLY-CALLS-SSOV-V3':
@@ -254,6 +256,8 @@ const Addresses: { [key: number]: any } = {
           '0xC59836FEC63Cfb2E48b0aa00515056436D74Dc03',
         'ETH-QUARTERLY-PUTS-SSOV-V3':
           '0x8a0dd3203a9F1cf66c7201e4A8Ab4762D09f0B3a',
+        'stETH-WEEKLY-CALLS-SSOV-V3':
+          '0xFca61E79F38a7a82c62f469f55A9df54CB8dF678',
       },
     },
     SSOV: {
@@ -361,6 +365,11 @@ const Addresses: { [key: number]: any } = {
         UTILS: '0x508b9fe64ab1c3932ebdaede7fbe0f9dc7da5444',
         'POSITION-FAcTORY': '0x1800873d903681F857dD59c23Bad8034512b9C20',
         'CALLBACK-RELAY': '0x6bef73eb210ac494b526f11c8ffaa3754433e178',
+      },
+    },
+    OLP: {
+      SsovLp: {
+        'DPX-MONTHLY': '0x3D0354322D4Ef15CBF4498581976F0dd40DedD07',
       },
     },
   },
