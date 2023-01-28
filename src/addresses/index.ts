@@ -355,6 +355,18 @@ const Addresses: { [key: number]: any } = {
     OLP: {
       SsovLp: {
         'DPX-MONTHLY': '0x3D0354322D4Ef15CBF4498581976F0dd40DedD07',
+        // TODO: update addresses after deploying
+        // 'RDPX-MONTHLY': '0x1234',
+        // 'ETH-WEEKLY': '0x1234',
+        // 'DPX-WEEKLY': '0x1234',
+        // 'RDPX-WEEKLY': '0x1234',
+        // 'GOHM-WEEKLY': '0x1234',
+        // 'ETH-MONTHLY': '0x1234',
+        // 'STETH-WEEKLY': '0x1234',
+        // 'BTC-WEEKLY': '0x1234',
+        // 'GMX-WEEKLY': '0x1234',
+        // 'CRV-WEEKLY': '0x1234',
+        // 'ETH-QUARTERLY': '0x1234',
       },
     },
   },
