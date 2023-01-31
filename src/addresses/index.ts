@@ -123,6 +123,12 @@ const Addresses: { [key: number]: any } = {
     GMX: '0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a',
     '2CRV': '0x7f90122bf0700f9e7e1f688fe926940e8839f353',
     MAGIC: '0x539bde0d7dbd336b79148aa742883198bbf60342',
+    // used in olp
+    BTC: '0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f',
+    CRV: '0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978',
+    ETH: '0x82af49447d8a07e3bd95bd0d56f35241523fbab1',
+    STETH: '0x5979D7b546E38E414F7E9822514be443A4800529',
+    // used in olp
     'DPX-WETH': '0x0c1cf6883efa1b496b01f654e247b9b419873054',
     'RDPX-WETH': '0x7418f5a2621e13c05d1efbd71ec922070794b90a',
     StakingRewardsFactory: '0x923c88f0Aa5998953c01a23cDd1D82852f94Aeea',
@@ -349,6 +355,18 @@ const Addresses: { [key: number]: any } = {
     OLP: {
       SsovLp: {
         'DPX-MONTHLY': '0x3D0354322D4Ef15CBF4498581976F0dd40DedD07',
+        // TODO: update addresses after deploying
+        // 'RDPX-MONTHLY': '0x1234',
+        // 'ETH-WEEKLY': '0x1234',
+        // 'DPX-WEEKLY': '0x1234',
+        // 'RDPX-WEEKLY': '0x1234',
+        // 'GOHM-WEEKLY': '0x1234',
+        // 'ETH-MONTHLY': '0x1234',
+        // 'STETH-WEEKLY': '0x1234',
+        // 'BTC-WEEKLY': '0x1234',
+        // 'GMX-WEEKLY': '0x1234',
+        // 'CRV-WEEKLY': '0x1234',
+        // 'ETH-QUARTERLY': '0x1234',
       },
     },
   },
