@@ -240,6 +240,8 @@ const Addresses: { [key: number]: any } = {
           '0x8a0dd3203a9F1cf66c7201e4A8Ab4762D09f0B3a',
         'stETH-WEEKLY-CALLS-SSOV-V3':
           '0xFca61E79F38a7a82c62f469f55A9df54CB8dF678',
+        'stETH-MONTHLY-CALLS-SSOV-V3':
+          '0x475a5a712b741b9ab992e6af0b9e5adee3d1851b',
       },
     },
     SSOV: {
