@@ -434,6 +434,16 @@ const Addresses: { [key: number]: any } = {
       },
     },
   },
+  137: {
+    USDC: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+    WMATIC: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+    STRADDLES: {
+      OPTION_PRICING: '0x0ff5A8451A839f5F0BB3562689D9A44089738D11',
+      Vault: {
+        MATIC: '0x5540FEa353dF6302611DA1d57988104e43A4B6b6',
+      },
+    },
+  },
 };
 
 export default Addresses;
