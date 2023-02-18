@@ -444,7 +444,7 @@ const Addresses: { [key: number]: any } = {
     STRADDLES: {
       OPTION_PRICING: '0x0ff5A8451A839f5F0BB3562689D9A44089738D11',
       Vault: {
-        MATIC: '0x5540FEa353dF6302611DA1d57988104e43A4B6b6',
+        MATIC: '0x1a848bc8C28b4ea08C2f1589386C4f988d4e9fcb',
       },
     },
   },
