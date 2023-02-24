@@ -448,6 +448,13 @@ const Addresses: { [key: number]: any } = {
         MATIC: '0x1a848bc8C28b4ea08C2f1589386C4f988d4e9fcb',
       },
     },
+    'SSOV-V3': {
+      VIEWER: '0xbf91446115f3E3eaF5079A88E078F876C0d7A6A8',
+      VAULTS: {
+        'MATIC-WEEKLY-CALLS-SSOV-V3':
+          '0x4Ee9fe9500E7C4Fe849AdD9b14beEc5eC5b7d955',
+      },
+    },
   },
 };
 
