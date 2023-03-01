@@ -147,7 +147,6 @@ const Addresses: { [key: number]: any } = {
     Tzwap1inchRouter: '0xDA615781745fe52Fc3383Ad23cE9184419bEec30',
     Escrow: '0x6D9c288708a77d51Fa66393916511Cde60522baF',
     CurveGaugesOracle: '0xF45f20bc21C9933ae8613EdD8EF108b7fD25E527',
-    Curve2PoolSwap: '0x07512aF4a8720a04226D2E9c6d802AA25da8D921',
     NFTS: {
       DopexBridgoorNFT: '0x4Ee9fe9500E7C4Fe849AdD9b14beEc5eC5b7d955',
       DopexHalloweenNFT: '0x9baDE4013a7601aA1f3e9f1361a4ebE60D91B1B5',
