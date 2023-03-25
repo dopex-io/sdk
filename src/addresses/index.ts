@@ -388,6 +388,20 @@ const Addresses: { [key: number]: any } = {
         'CRV-WEEKLY': '0xc1e6E4E28e9760099450653908bEed7ca3129E1D',
       },
     },
+    'OPTION-SCALPS': {
+      ETH: '0x49f517Cfed2679Fb8B31Df102150b81b25Ee552b',
+      ARB: '0xDaF4FfB05bfCb2C328c19135E3e74e1182C88283',
+      LP: {
+        ETH: {
+          QUOTE: '0x2c123b7f3028bfec69a6ab1237c212dfa10e8866',
+          BASE: '0x28ac2aa81be11a8822880d91c19643fe5e343999',
+        },
+        ARB: {
+          QUOTE: '0xeebeb3b7a846b7567e2c581ecabcf3bec2fb46c5',
+          BASE: '0x7e9f05a02893d5c09c66b128866b86f66d12fe1f',
+        },
+      },
+    },
   },
   56: {
     USDT: '0x55d398326f99059fF775485246999027B3197955',
