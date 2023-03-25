@@ -349,11 +349,12 @@ const Addresses: { [key: number]: any } = {
       WETH: {
         PUTS: {
           WEEKLY: {
-            ACTIVE: '0x9C6b9Bd786adB1f644cedbDcB193203cbC90D1AF',
+            ACTIVE: '0xf075b561f2657fF9300C01141Dc2748F5b24a384',
             RETIRED: [
               '0x1640eda814072286FDDc5b952D1C56E576621379',
               '0x5c267496043F864CE8beB62bBd1BBFc20EfF5248',
               '0x9a63529255D57f9B6e26B2965E8285e6B06761c4',
+              '0x9C6b9Bd786adB1f644cedbDcB193203cbC90D1AF',
             ],
           },
         },
