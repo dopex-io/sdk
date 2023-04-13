@@ -120,7 +120,7 @@ const Addresses: { [key: number]: any } = {
       Treasury: '0x4763A63d2FE99662aEB0CfD95657d3ab1f4E7c79',
       PerpetualVault: '0x4F37565794cDaC1e98e808a71C864251Fd0bb13B',
       RdpxDecayingBonds: '0xC28263B6Aa45345FcB8e47C419A9789451D8CD8E',
-      Faucet: '0xd1db1e91c8852c33cfe6d04504dac79cfb0ea1d9',
+      Faucet: '0xD1db1e91c8852c33cfe6d04504DaC79CfB0ea1D9',
     },
   },
   42161: {
