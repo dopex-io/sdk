@@ -259,6 +259,8 @@ const Addresses: { [key: number]: any } = {
           '0xFca61E79F38a7a82c62f469f55A9df54CB8dF678',
         'stETH-MONTHLY-CALLS-SSOV-V3':
           '0x475a5a712b741b9ab992e6af0b9e5adee3d1851b',
+        'ARB-MONTHLY-CALLS-SSOV-V3':
+          '0xDF3d96299275E2Fb40124b8Ad9d270acFDcc6148',
       },
     },
     SSOV: {
